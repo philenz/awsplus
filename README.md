@@ -16,6 +16,9 @@ The program will run as a web server on port 9090 (as defined in config.json).
 ##### Contents
 
 * _README.md_: This file
+* _config/config.go_: Read config settings
+* _logging/logging.go_: Log stuff
+* _datastore/datastore.go_: Open db connection; db operations
 
 ##### Setting Up
 
