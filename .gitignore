@@ -48,7 +48,8 @@ crashlytics-build.properties
 
 # Created by .ignore support plugin (hsz.mobi)
 
-# Gallagher ignores...
+# awsplus ignore...
 *.jar
 *.txt
 *.log
+config.json
