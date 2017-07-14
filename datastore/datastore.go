@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"sgmanager/config"
+	"awsplus/config"
 )
 
 var Db *sql.DB
