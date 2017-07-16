@@ -9,9 +9,19 @@ Those pieces of information...
 2. When was the rule added
 3. Description of the rule (e.g.: what is the ip address range for)
 
-The extra information will be stored in a PostgreSQL database. Either locally or in RDS.
+##### Design
 
-The program will run as a web server on port 9090 (as defined in config.json).
+* Use PostgreSQL or MongoDB? Go with PostgreSQL initially.
+* Use RDS or local? Local.
+* Run as Docker container? Any advantage?
+* Define web server port etc in config.json.
+* In DB init function, populate security group table if no rows.
+* When someone adds an ingress security group rule lambda function will:
+* (1) Add a row to the database table;
+* (2) Put a message on in SQS.
+* App will check SQS on startup and periodically after that.
+* Write lambda code in Python and add to this project.
+* Use Vue.js for front-end? Or just jQuery / jQueryUI.
 
 ##### Contents
 
