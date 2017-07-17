@@ -34,6 +34,7 @@ Those pieces of information...
 ##### Contents
 
 * _README.md_: This file
+* _sql/create-db.yml_: Create a database called awsplus, with same user and password!
 * _config/config.go_: Read config settings
 * _datastore/datastore.go_: Open db connection; db operations
 * _logging/logging.go_: Log stuff
