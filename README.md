@@ -42,6 +42,7 @@ Those pieces of information...
 * _templates_: Templates used by each route
 * _main.go_: Entrypoint, starts up web server
 * _runtime_: Runtime config and logs
+* _aws_: Use AWS CLI to get info from AWS
 
 ##### Setting Up
 
