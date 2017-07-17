@@ -46,7 +46,3 @@ func init() {
 	return
 }
 
-func PrintMessage() {
-	fmt.Println("Hello from datastore :-)")
-}
-
