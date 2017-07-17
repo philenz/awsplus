@@ -21,8 +21,10 @@ func main() {
 
 	// html template pages
 	mux.HandleFunc("/", routes.Index)
+	// -------------------
 
 	// web services returning JSON
+	// ---------------------------
 
 	fmt.Println("Starting awsplus on", port)
 	logging.Info("Starting awsplus on", port)
