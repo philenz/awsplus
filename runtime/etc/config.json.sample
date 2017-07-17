@@ -1,0 +1,8 @@
+{
+  "Static": "frontend",
+  "Port": 9090,
+  "Region": "ap-southeast-2",
+  "DBName": "awsplus",
+  "DBUser": "awsplus",
+  "DBPass": "passw0rd"
+}
