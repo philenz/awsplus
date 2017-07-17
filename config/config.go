@@ -18,7 +18,7 @@ type Configuration struct {
 var Config Configuration
 
 func init() {
-	file, err := os.Open("etc/config.json")
+	file, err := os.Open("runtime/etc/config.json")
 	if err != nil {
 		log.Fatalln("Cannot open config file", err)
 	}
