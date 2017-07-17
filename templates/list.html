@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>AWS Plus</title>
+
+        <!-- jQuery and UI -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- javascript/css for this app -->
+        <script src="/frontend/js/awsplus.js"></script>
+        <link rel="stylesheet" href="/frontend/css/awsplus.css" />
+
+    </head>
+
+    <body>
+        <h3 align="center">Gallagher Security Groups</h3>
+
+        <table border="1" align="center">
+            <tr>
+                <th align="left">Group Name</th>
+                <th align="left">VPC</th>
+                <th align="left">Description</th>
+                <th align="left">Ingress</th>
+                <!-- <th align="left">JSON Record</th> -->
+            </tr>
+            {{range .}}
+            <tr>
+                <td>{{ .GroupName }}</td>
+                <td>{{ vpcname .VpcId }}</td>
+                <td>{{ .Description }}</td>
+                <td>
+                    <table align="center">
+                        {{range .IpPermissions}}
+                        <tr>
+                            <td>{{ .IpProtocol -}}</td>
+                            <td>{{- .FromPort -}}-{{- .ToPort -}}</td>
+                            <td>
+                                <ul>
+                                    {{range .IpRanges}}
+                                    <li>{{ .CidrIp }}</li>
+                                    {{end}}
+                                    {{range .UserIdGroupPairs}}
+                                    <li>{{ sgname .GroupId }}</li>
+                                    {{end}}
+                                </ul>
+                            </td>
+                        </tr>
+                        {{end}}
+                    </table>
+                </td>
+                <!-- <td>{{ . }}</td> -->
+            </tr>
+            {{ end }}
+        </table>
+    </body>
+</html>
