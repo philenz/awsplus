@@ -1,5 +1,7 @@
 #### AWS Plus
 
+##### Introduction 
+
 Adds functionality not found on the AWS console.
 
 Initially the project will manage three extra pieces of information when someone adds an inbound rule to a security group.
@@ -8,6 +10,12 @@ Those pieces of information...
 1. Who added the rule
 2. When was the rule added
 3. Description of the rule (e.g.: what is the ip address range for)
+
+##### To Do
+
+* Write a Lambda function to write an SQS message when a security group ingress is changed.
+* Write DB init to create/populate database if not already done.
+* Write code to update database when read message from SQS.
 
 ##### Design
 
