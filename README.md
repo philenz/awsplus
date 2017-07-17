@@ -35,8 +35,13 @@ Those pieces of information...
 
 * _README.md_: This file
 * _config/config.go_: Read config settings
-* _logging/logging.go_: Log stuff
 * _datastore/datastore.go_: Open db connection; db operations
+* _logging/logging.go_: Log stuff
+* _frontend_: Static files (css, js, etc)
+* _routes_: Routes available to the app
+* _templates_: Templates used by each route
+* _main.go_: Entrypoint, starts up web server
+* _runtime_: Runtime config and logs
 
 ##### Setting Up
 
