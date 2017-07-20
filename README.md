@@ -21,7 +21,7 @@ Those pieces of information...
 
 * Use PostgreSQL or MongoDB? Go with PostgreSQL initially.
 * Use RDS or local? Local.
-* Run as Docker container? Any advantage?
+* Run as Docker container? Any advantage? Links below.
 * Define web server port etc in config.json.
 * In DB init function, populate security group table if no rows.
 * When someone adds an ingress security group rule lambda function will:
@@ -49,5 +49,10 @@ Those pieces of information...
 
 * Install postgresql https://fedoraproject.org/wiki/PostgreSQL
 * go get github.com/lib/pq
+
+##### Docker and Go
+
+* [Lean Go Containers with Multi-Stage Dockerfiles](https://container-solutions.com/lean-go-containers-multi-stage-dockerfiles/)
+* [Building and Running Go Apps in Docker](https://blog.quickmediasolutions.com/2017/07/18/building-and-running-go-apps-in-docker.html)
 
 
