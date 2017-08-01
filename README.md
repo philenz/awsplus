@@ -30,6 +30,8 @@ Those pieces of information...
 * App will check SQS on startup and periodically after that.
 * Write lambda code in Python and add to this project.
 * Use Vue.js for front-end? Or just jQuery / jQueryUI.
+* Don't use Go... https://aws.amazon.com/serverless/build-a-web-app/
+* Use Google App Engine.
 
 ##### Contents
 
