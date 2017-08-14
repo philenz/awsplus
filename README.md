@@ -31,6 +31,7 @@ Those pieces of information...
 * Write lambda code in Python and add to this project.
 * Use Vue.js for front-end? Or just jQuery / jQueryUI.
 * Don't use Go... https://aws.amazon.com/serverless/build-a-web-app/
+* https://aws.amazon.com/blogs/developer/chalice-1-0-0-ga-release/
 * Use Google App Engine.
 
 ##### Contents
